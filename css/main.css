@@ -1,0 +1,123 @@
+/*
+** Primary: #00EAAD; bright green
+** Secondary: #9146de; purple
+** tert: #df5244; retro red
+** Refactor Design
+** 1. HTML sections
+** 2. Make diagonal section borders (https://www.youtube.com/watch?v=kmVn9BgcM48)
+** 3. Make Sortable project categories
+**
+*/
+
+body {
+  color: #333;
+  font-family: 'Fira Mono', monospace, sans-serif;
+  margin: 0;
+}
+
+hr {
+  border: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Permanent Marker', cursive, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+p {
+  text-align: center;
+}
+
+a:link, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #B5B5B5;
+}
+
+a:hover {
+  font-size: 1.1em;
+  border-bottom: 5px double #df5244;
+}
+
+a:active {
+  color: #df5244;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-container {
+  /*
+  ** his image has empty space on left:
+  ** background: url(assets/home-header-bg-2.jpg) no-repeat center center fixed;
+  */
+  background: url(assets/home-header-bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #333;
+  background-blend-mode: overlay;
+  height: 600px;
+}
+
+.hero-title {
+  color: #fff;
+  font-size: 55px;
+  margin: 0;
+}
+
+.hero-subtitle {
+  color: #fff;
+  font-size: 20px;
+}
+
+.bio {
+  color: #fff;
+}
+
+.me {
+  height: 150px;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: #fff;
+  margin-top: 40px;
+}
+
+.about {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hr--green {
+  width: 200px;
+  border-top: 5px double #00EAAD;
+}
+
+.box {
+  float: left;
+  width: 42.5%;
+  margin-left: 5%;
+  margin-top: 40px;
+}
+
+.clear {
+  clear: both;
+}
