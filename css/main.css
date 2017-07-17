@@ -67,7 +67,7 @@ img {
   ** his image has empty space on left:
   ** background: url(assets/home-header-bg-2.jpg) no-repeat center center fixed;
   */
-  background: url(assets/home-header-bg.jpg) no-repeat center center fixed;
+  background: url('../assets/home-header-bg.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
