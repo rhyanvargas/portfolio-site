@@ -9,10 +9,42 @@
 **
 */
 
+/** 
+*** BASIC RESET
+*/
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, small {
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent; 
+
+}
+
+html,
+body {
+  height: 100%;
+}
+
 body {
   color: #333;
+  font-size: 16px;
   font-family: 'Fira Mono', monospace, sans-serif;
   margin: 0;
+}
+
+div {
+  margin-bottom:40px;
+}
+
+footer  {
+  background-color: #333;
+  color: #B5B5B5;
+  padding: 20px 0;
+  text-align: center;
 }
 
 hr {
@@ -22,17 +54,15 @@ hr {
 h1, h2, h3, h4 {
   font-family: 'Permanent Marker', cursive, sans-serif;
   text-align: center;
-  margin: 0;
 }
 
 h1 {
   font-size: 50px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 h2 {
-  font-size: 18px;
-  margin-top: 0;
+  font-size: 25px;
 }
 
 p {
@@ -49,7 +79,8 @@ a:visited {
 }
 
 a:hover {
-  font-size: 1.1em;
+  font-size: 1.01em;
+  font-weight: bold;
   border-bottom: 5px double #df5244;
 }
 
@@ -61,6 +92,64 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Make the nav take up the whole body width, and give it some top and bottom margin space */
+
+nav {
+  width: 100%;
+  height: 40px;
+  margin: 20px 0; 
+  position: relative;
+  }
+
+/* Make the list of links take up the whole width of the nav */
+
+.navbar {
+  padding: 0;
+  margin: 0 auto;
+  width: 600px; 
+  height: 40px;
+}
+
+.nav-item {
+  display: inline;
+  float: left;
+}
+
+.nav-item a {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 40px;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+
+}
+
+.nav-item:last-child a {
+  border-right: 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+*/
 
 .about-container {
   /*
@@ -88,9 +177,6 @@ img {
   font-size: 20px;
 }
 
-.bio {
-  color: #fff;
-}
 
 .me {
   height: 150px;
@@ -101,6 +187,7 @@ img {
 }
 
 .about {
+  color: #fff;
   width: 400px;
   margin: 0 auto;
   text-align: center;
