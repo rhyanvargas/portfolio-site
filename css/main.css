@@ -9,23 +9,21 @@
 **
 */
 
-/** 
+
+/**
 *** BASIC RESET
 */
 
 h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, small {
-
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
   font-size: 100%;
-  background: transparent; 
-
+  background: transparent;
 }
 
-html,
-body {
+html, body {
   height: 100%;
 }
 
@@ -37,10 +35,10 @@ body {
 }
 
 div {
-  margin-bottom:40px;
+  margin-bottom: 40px;
 }
 
-footer  {
+footer {
   background-color: #333;
   color: #B5B5B5;
   padding: 20px 0;
@@ -48,6 +46,8 @@ footer  {
 }
 
 hr {
+  margin-bottom: 10px;
+  margin-top: 0;
   border: none;
 }
 
@@ -58,11 +58,12 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 50px;
-  margin-top: 20px;
+  /*margin-bottom: 20px;*/
 }
 
 h2 {
   font-size: 25px;
+  margin-bottom: 10px;
 }
 
 p {
@@ -93,21 +94,23 @@ img {
   height: auto;
 }
 
+
 /* Make the nav take up the whole body width, and give it some top and bottom margin space */
 
 nav {
   width: 100%;
   height: 40px;
-  margin: 20px 0; 
+  margin: 20px 0;
   position: relative;
-  }
+}
+
 
 /* Make the list of links take up the whole width of the nav */
 
 .navbar {
   padding: 0;
   margin: 0 auto;
-  width: 600px; 
+  width: 600px;
   height: 40px;
 }
 
@@ -122,10 +125,9 @@ nav {
   text-align: center;
   text-decoration: none;
   line-height: 40px;
-  box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 .nav-item:last-child a {
@@ -137,6 +139,7 @@ nav {
   display: table;
   clear: both;
 }
+
 
 /*.clearfix:before,
 .clearfix:after {
@@ -163,7 +166,7 @@ nav {
   background-size: cover;
   background-color: #333;
   background-blend-mode: overlay;
-  height: 600px;
+  height: 90vh;
 }
 
 .hero-title {
@@ -176,7 +179,6 @@ nav {
   color: #fff;
   font-size: 20px;
 }
-
 
 .me {
   height: 150px;
@@ -191,6 +193,40 @@ nav {
   width: 400px;
   margin: 0 auto;
   text-align: center;
+}
+
+
+/*.social img {
+  color: #fff;
+  height: 60px;
+  width: 60px;
+}*/
+
+a.svg {
+  margin: 0 10px;
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  width: 50px
+}
+
+.svg:hover {
+  transform: scale(1.2);
+  border-bottom: none;
+}
+
+.svg {
+  transition: all .25s;
+  transform-origin: 50% 50%;
+}
+
+a.svg:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .hr--green {
