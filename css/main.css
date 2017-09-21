@@ -28,21 +28,32 @@ body {
 h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, small {
   margin: 0;
   padding: 0;
-  border: 0;
+  border: none;
   outline: 0;
   font-size: 100%;
   background: transparent;
 }
 
-div {
-  margin-bottom: 40px;
-}
 
 footer {
   background-color: #333;
   color: #B5B5B5;
   padding: 20px 0;
   text-align: center;
+  position: absolute;
+  /* bottom: 0; */
+  width: 100%;
+}
+
+div {
+  padding: 10px 0;
+}
+
+nav,
+ul,
+li,
+.ui.fixed.menu {
+  border-bottom: none;
 }
 
 hr {
@@ -58,7 +69,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 50px;
-  /*margin-bottom: 20px;*/
+  margin-top: 20px;
 }
 
 h2 {
@@ -96,33 +107,35 @@ img {
 }
 
 
+
 /* Make the nav take up the whole body width, and give it some top and bottom margin space */
 
-nav {
+/*nav {
   width: 100%;
   height: 40px;
   margin: 20px 0;
-  position: relative;
+  position: absolute;
+  top: 0;
 }
-
+*/
 
 /* Make the list of links take up the whole width of the nav */
 
 .navbar {
   padding: 0;
   margin: 0 auto;
-  width: 600px;
+  width: 480px;
   height: 40px;
 }
 
 .nav-item {
-  display: inline;
+  display: inline-block;
   float: left;
 }
 
 .nav-item a {
   display: inline-block;
-  width: 150px;
+  width: 120px;
   text-align: center;
   text-decoration: none;
   line-height: 40px;
@@ -167,7 +180,6 @@ nav {
   background-size: cover;
   background-color: #333;
   background-blend-mode: overlay;
-  height: 100vh;
 }
 
 .hero-title {
@@ -195,13 +207,6 @@ nav {
   margin: 0 auto;
   text-align: center;
 }
-
-
-/*.social img {
-  color: #fff;
-  height: 60px;
-  width: 60px;
-}*/
 
 a.svg {
   margin: 0 10px;
@@ -244,4 +249,27 @@ a.svg:after {
 
 .clear {
   clear: both;
+}
+
+/********** COMPONENTS ***************************/
+ui.menu > * {
+  border: none;
+}
+
+button {
+  background-color: #00EAAD;
+  color: #fff;
+  border-radius: 5%;
+  border: none;
+  font-size: 15px;
+  padding: 10px;
+}
+a.button:link {
+  border-bottom: none;
+  font-size: 1.1em;
+}
+
+a.header.item.resume {
+  background-color: #00EAAD;
+  color: #fff;
 }

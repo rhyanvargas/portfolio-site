@@ -2,42 +2,44 @@
 <html>
   <head>
     <meta charset="utf-8">
-
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" href="css/prism-atom-dark.css" type="text/css" media="screen"/>
     <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Permanent+Marker" rel="stylesheet">
-    <script type="text/javascript" src="js/prism.js" defer></script>
-    <script type="text/javascript" src="js/prism.ruby.js" defer></script>
-    <title>Rhyan Vargas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/menu.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" href="/favicon.ico?v=2" />
+    <title>Rhyan Vargas | Junior Front End Web Developer</title>
   </head>
   <body>
-    <nav class="clearfix">
-      <ul class="navbar clearfix">
-        <li class="nav-item"><a href="#about">About</a></li>
-        <li class="nav-item"><a href="#projects">Projects</a></li>
-        <li class="nav-item"><a href="#bits">Code Bits</a></li>
-        <li class="nav-item"><a href="#contact">Contact</a></li>
+    <nav class=" ui menu fixed top ">
+      <ul class="ui container navbar ">
+        <li class="nav-item"><a class="item header" href="#me">About</a></li>
+        <li class="nav-item"><a class="item header" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="item header" href="#fun">Fun Code</a></li>
+        <li class="nav-item"><a class="item header resume" target='_blank' href="https://drive.google.com/open?id=0BzaQO60f0RrHYnM4UlVRaExlNWs">Resume</a></li>
       </ul>
     </nav>
+
+<!-- 
+    <li class="nav-item"><a class="item header" href="#about">About</a></li>
+        <li class="nav-item"><a class="item header" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="item header" href="#bits">Code Bits</a></li>
+        <li class="nav-item"><a class="item header" href="#contact">Contact</a></li>
+
+         -->
     <div class="about-container">
-      <div class="about">
+      <div id="me" class="about">
         <img src="assets/bio-pic.jpg" class="me">
         <h1 class="hero-title">Rhyan Vargas</h1>
         <h2 class="hero-subtitle">Front-end Web Developer</h2>
         <hr class="hr--green" />
         <div class="bio">
-          <p>Rhyan Vargas is a Web Developer and open-source contributor. I am very interested in modern web development, design and great user experiences. It started when I first used an iMac G3 in school, built my first windows tower at age 12, and continued through today. I invest my time and money to make sure I learn as much about web technologies through:  FreeCodeCamp.com , Designlab, CSS-tricks, Udemy courses, Udactiy, and other resources that I stumble upon.</p>
+          <p>Rhyan Vargas is a Web Developer and open-source contributor. I am very interested in modern web development, design and great user experiences. It started when I first used an iMac G3 in school, built my first windows tower at age 12, and recently found interest in web development. I invest my time and money to make sure I learn as much about web technologies through:  FreeCodeCamp.com , Designlab, CSS-tricks, Udemy courses, Udactiy, and other resources that I stumble upon.</p>
+        </div>
+        <div>
+          
+            <button><a class='button' href="https://drive.google.com/open?id=0BzaQO60f0RrHYnM4UlVRaExlNWs"> View My Resume </a></button>
+         
         </div>
         <div class="social">
-          <!-- <a href="https://github.com/rhyanvargas">
-            <img src="assets/icon-github.png">
-          </a>
-          <a href="https://medium.com/@rhyanv1">
-            <img src="assets/icon-medium.png">
-          </a>
-          <a href="https://facebook.com/rhyanv1">
-            <img src="assets/icon-fb-messenger.png">
-          </a> -->
           <a href="https://github.com/rhyanvargas" class="svg">
             <object data="assets/icon-github.svg" type="image/svg+xml">
               <img src="assets/icon-github.png" />
@@ -45,6 +47,11 @@
           </a>
           <a href="https://medium.com/@rhyanv1" class="svg">
             <object data="assets/icon-medium.svg" type="image/svg+xml">
+              <img src="assets/icon-github.png" />
+            </object>
+          </a>
+           <a href="https://codepen.io/rhyanv" class="svg">
+            <object data="assets/icon-codepen.svg" type="image/svg+xml">
               <img src="assets/icon-github.png" />
             </object>
           </a>
@@ -62,17 +69,41 @@
     <div id="projects">
       <h1>Projects</h1>
       <hr class="hr--green" />
+      <h4>In Development...</h4>
 
+      
       <div class="box">
-        <h2><a href="#">JS Drumkit</a></h2>
-        <p>This web App will allow you to rock out on your keyboard! Hit the keys that are associated with a instrument sample, and jam out!</p>
+        <h2><a target='_blank' href="https://github.com/rhyanvargas/BlogApp">Express Blog</a></h2>
+        <p>Blog all about it! I learned how to setup RESTful routes through the creation of this blog app. Also, I learned how to style the whole app with SemanticUI (CSS framework) </p>
       </div>
 
       <div class="box">
-       <img src="assets/drums.png"></div>
+       <img src="assets/blogapp.png"></div>
+
 
       <br class="clear" />
 
+      <div class="box">
+       <img src="assets/moviesearch.png"></div>
+
+      <div class="box">
+        <h2><a target='_blank' href="https://github.com/rhyanvargas/MovieSearchApp">Movie Search App</a></h2>
+        <p>Search for your favorite movie! I learned how to utilize a movie API to allow users to search for movies. I also learned more about how to build a fully functional ExpressJS app. </p>
+      </div>
+
+       <br class="clear" />
+
+      <div class="box">
+        <h2><a target='_blank' href="https://github.com/rhyanvargas/YelpCamp">YelpCamp</a></h2>
+        <p>Do you go camping alot? Want to add your latest campground experiences? Now you can by creating a profile on YelpCamp! I learned how to build and deploy fully functional Web app using the MEN stack (MongoDB, Express and NodeJS). I learned how to create and manange multiple data maodels, create a simple Login/Register module, and storing all data in mongoDB (noSQL) database. </p>
+      </div>
+
+      <div class="box">
+       <img src="assets/yelpcamp.png"></div>
+
+
+
+<!-- 
       <div class="box">
         <img src="assets/clock-js.jpg"></div>
 
@@ -93,15 +124,34 @@
       <div class="box">
        <img src="assets/ajax-type-head.jpg">
       </div>
-
+ -->
       <br class="clear" />
     </div>
     <!-- End of projects -->
 
-  <!--==== CODE bits ====-->
-    <div id="bits">
-      <h1>Code Bits</h1>
+  <!--==== Fun Projects ====-->
+    <div id="fun">
+      <h1>Fun Projects</h1>
       <hr class="hr--green" />
+      <div class="box">
+        <h2><a href="https://rhyanvargas.github.io/JavascriptDrum/">JS Drumkit</a></h2>
+        <p>This web App will allow you to rock out on your keyboard! Hit the keys that are associated with a instrument sample, and jam out! I learned how to grab number codes of each keyboard key from the DOM using vanilla javascript, then using event listeners and triggers to map sound samples to keys</p>
+      </div>
+
+      <div class="box">
+       <img src="assets/drums.png"></div>
+
+      <br class="clear" />
+       
+  <!-- END OF FUN -->
+
+
+  <!--==== CODE bits ====-->
+    <!--  <div id="bits">
+      <h1>Code Bits</h1>
+      <hr class="hr-green" />
+
+    
       <div class="box">
         <h2>Temperature Conversion</h2>
         <p>
@@ -155,7 +205,7 @@
         </pre>
       </div>
     </div>
-
+ -->
     <br class="clear" />
     <!-- End of Code bits -->
     
