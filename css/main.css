@@ -124,18 +124,15 @@ img {
 .navbar {
   padding: 0;
   margin: 0 auto;
-  width: 480px;
-  height: 40px;
 }
 
 .nav-item {
   display: inline-block;
-  float: left;
 }
 
 .nav-item a {
   display: inline-block;
-  width: 120px;
+  height: 100%;
   text-align: center;
   text-decoration: none;
   line-height: 40px;
